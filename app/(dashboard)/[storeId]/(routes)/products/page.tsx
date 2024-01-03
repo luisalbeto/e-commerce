@@ -1,7 +1,7 @@
 import { format } from "date-fns";
 
 import prismadb from "@/lib/prismadb";
-import { BillboardClient } from "./components/client";
+import { ProductClient } from "./components/client";
 import { ProductColumn } from "./components/columns";
 import { formatter } from "@/lib/utils";
 
@@ -40,7 +40,7 @@ const  ProductsPage = async ({
   return(
     <div className="flex-col">
       <div className="flex-1 space-y-4 p-8 pt-6">
-        <BillboardClient data={formattedProducts}/>
+        <ProductClient data={formattedProducts}/>
       </div>
     </div>
   );
